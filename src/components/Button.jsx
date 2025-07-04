@@ -11,7 +11,7 @@ const Button = ({ children, className = "", ...props }) => {
         bg-[#06402b] hover:bg-[#51A687]
         cursor-pointer
         text-white font-medium
-        transition-all duration-300 ease-in-out rounded-4xl
+        transition-all duration-700 ease-in-out rounded-4xl
         ${isHovered ? "pr-[50px]" : "pr-5"}
         overflow-hidden
         ${className}
@@ -25,7 +25,7 @@ const Button = ({ children, className = "", ...props }) => {
         className={`
         absolute right-3
         w-5 h-5 flex items-center justify-center
-        transition-all duration-300 ease-in-out
+        transition-all duration-700 ease-in-out
         ${isHovered ? "opacity-100 scale-100" : "opacity-0 scale-50"}
       `}
       >
