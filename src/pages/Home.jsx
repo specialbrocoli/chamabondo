@@ -34,9 +34,12 @@ const Home = () => {
   return (
     <main>
       {/* Hero section */}
-      <section className="mt-12 lg:-mt-1 w-full sm:w-xl mx-auto">
-        <div className="flex flex-col items-center justify-center p-6">
-          <h1 className="text-2xl font-extrabold text-center mb-4 md:text-3xl lg:text-4xl">
+
+      <section className='container w-full mt-12 sm:mx-auto sm:w-xl md:w-3xl lg:-mt-2 xl:w-6xl'>
+        {/* Hero decription */}
+        <div className='flex flex-col items-center justify-center p-6 md:w-xl md:mx-auto'>
+          <h1 className='text-2xl font-black text-center mb-4 md:text-3xl lg:text-4xl'>
+
             Putting your child's <br /> future in great motion
           </h1>
           <p className="text-base text-center mb-6 md:text-lg">
@@ -48,9 +51,24 @@ const Home = () => {
             <Link to="/admissions">Enroll Now</Link>
           </Button>
         </div>
-        <div className="w-full flex flex-wrap md:flex-nowrap items-center justify-center gap-8 p-6">
-          <img src={heroImageOne} alt="hero image 1" />
-          <img src={heroImageTwo} alt="hero image 2" />
+
+        {/* Hero img wrapper */}
+        <div className='flex flex-col items-center justify-center md:flex-row'>
+          <div className='p-4'>
+            <img
+              src={heroImageOne}
+              alt='hero image 1'
+              className='object-cover'
+            />
+          </div>
+
+          <div className='p-4'>
+            <img
+              src={heroImageTwo}
+              alt='hero image 2'
+              className='object-cover'
+            />
+          </div>
         </div>
       </section>
 
@@ -89,14 +107,16 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About-us section */}
-      <section className="container mx-auto  mt-2">
-        <h1 className="text-3xl font-bold text-center md:text-4xl">About us</h1>
 
-        <div className="flex flex-col md:flex-row md:flex-nowrap mt-12 mx-auto max-w-[1280px]">
-          {/* about-us description */}
-          <div className="flex-1/2 p-6">
-            <h2 className="font-bold text-3xl mb-6">
+      {/* About us section */}
+      <section className='container mx-auto mt-2'>
+        <h1 className='text-3xl font-bold text-center md:text-4xl'>About us</h1>
+        {/* Section content wrapper */}
+        <div className='flex flex-col xl:flex-row mt-12'>
+          {/* Left section */}
+          <div className='flex-1/2 p-6'>
+            <h2 className='font-bold text-3xl mb-6'>
+
               <span>“</span>Who we are<span>”</span>
             </h2>
             <p className="text-[min(10vw, 70vw)] text-left mb-6">
@@ -116,22 +136,15 @@ const Home = () => {
             </Button>
           </div>
 
-          {/* about-us images */}
-          <div className="flex flex-1/2 mt-30 md:mt-14 ">
-            <div className="w-full h-full ml-16 mx-auto max-sm:ml-0 sm:w-96 sm:absolute">
-              <img
-                src={AboutImageOne}
-                alt="about image 1"
-                className="object-cover mx-auto"
-              />
+          {/* Right section */}
+          <div className='flex flex-1/2 mt-30 md:mt-14'>
+            <div className='sm:w-96 max-sm:max-w-max mx-auto sm:absolute'>
+              <img src={AboutImageOne} alt='about image 1' />
             </div>
 
-            <div className="relative h-full sm:-top-20 sm:-right-55 md:-top-1/5 md:-right-1/4 max-sm:hidden">
-              <img
-                src={AboutImageTwo}
-                alt="about image 2"
-                className="object-cover"
-              />
+            <div className='relative h-full sm:-top-20 sm:-right-55 md:-top-1/5 md:-right-1/4 max-sm:hidden'>
+              <img src={AboutImageTwo} alt='about image 2' />
+
             </div>
           </div>
         </div>
@@ -139,7 +152,6 @@ const Home = () => {
 
       {/*Why choose section*/}
       <section>
-
 
         <div className="mt-20 lg:mt-40 p-8">
           <h2 className="text-2xl md:text-3xl font-bold mt-8 mb-7 text-center pb-7 ">
@@ -152,12 +164,53 @@ const Home = () => {
         </div>
       </section>
 
-      {/* News-letter sign up section */}
-      <section className="py-20 px-6 sm:px-20 h-[90vh]">
+      {/* Testimonials section */}
+      <section className='container mx-auto mt-20 md:mt-25'>
+        <h1 className='text-3xl font-bold text-center'>Testimonials</h1>
+
+        <h2 className='text-xl font-medium text-center mt-0.5'>
+          What the parents <br /> say about us
+        </h2>
+
+        {/* Section content wrapper */}
+        <div className='container flex items-start justify-center mt-16 max-lg:flex-col'>
+          {/* Left section */}
+          <div className='p-8 flex-1/2 mt-3 mb-6'>
+            <p className='font-normal text-base text-center md:text-lg lg:text-left'>
+              Chamabondo Primary has truly changed our child's life. The
+              teachers are caring the environment is safe, and the learning is
+              incredible. we've seen so much growth — both academically and
+              socially. We're proud to part of this school community.
+            </p>
+
+            <Button className='text-base mt-12 max-lg:mx-auto'>
+              <Link to='/about'>Read more</Link>
+            </Button>
+          </div>
+
+          {/* Right section */}
+          <div className='flex gap-8 justify-center items-center flex-1/2 p-10'>
+            <div className=''>
+              <img src={TestimonialsImageOne} alt='' />
+            </div>
+            <div className='flex flex-col gap-4'>
+              <div className=''>
+                <img src={TestimonialsImageTwo} alt='testimonials' />
+              </div>
+              <div className=''>
+                <img src={TestimonialsImageThree} alt='testimonials' />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Newsletter section */}
+      <section className='py-20 px-6 sm:px-20 h-[90vh]'>
         <div className="bg-gray-800 bg-[url('/sign-up.jpg')] bg-blend-overlay bg-center bg-no-repeat bg-cover w-full h-full rounded-3xl flex items-center justify-center">
-          {/* Centered content block */}
-          <div className="flex flex-col items-center justify-center text-center space-y-6">
-            <h2 className="text-white text-2xl sm:text-3xl font-medium">
+          {/* Section content wrapper */}
+          <div className='flex flex-col items-center justify-center text-center space-y-6'>
+            <h2 className='text-white text-2xl sm:text-3xl font-medium'>
               Sign up for updates and news
             </h2>
 
