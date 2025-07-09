@@ -10,7 +10,7 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
-    { name: 'gallery', path: '/gallery' },
+    { name: 'Gallery', path: '/gallery' },
     { name: 'Calender', path: '/calender' },
     { name: 'Projects', path: '/projects' },
     { name: 'Contact us', path: '/contact' },
@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <header className=' flex items-center justify-between max-w-[1536px] mx-auto px-12 py-4'>
+      <header className=' flex items-center justify-between max-w-[1536px] mx-auto  px-3 py-4 md:px-10'>
         {/* logo */}
         <div className='w-14 h-14 sm:w-18 sm:h-18'>
           <Link to='/'>
