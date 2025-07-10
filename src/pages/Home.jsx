@@ -143,7 +143,7 @@ const Home = () => {
       {/*Why choose section*/}
       <section>
         <div className='mt-20 lg:mt-40 p-8'>
-          <h2 className='text-2xl font-bold mt-8 mb-7 text-center pb-7 lg:text-3xl xl:text-4xl'>
+          <h2 className='text-2xl font-bold mt-8 mb-7 text-center pb-7 lg:text-3xl 2xl:text-4xl'>
             Why choose us
           </h2>
 
