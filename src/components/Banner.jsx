@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Button from "../components/Button";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Button from '../components/Button';
 
-const Banner = ({ className = "" }) => {
+const Banner = ({ className = '' }) => {
   return (
     <section className="p-2 lg:p-0">
       {/* Banner container */}

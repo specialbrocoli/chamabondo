@@ -40,7 +40,7 @@ const Home = () => {
             changing world.
           </p>
           <Button>
-            <Link to="/admissions">Enroll Now</Link>
+            <Link to='/admissions'>Enroll Now</Link>
           </Button>
         </div>
 
@@ -65,8 +65,8 @@ const Home = () => {
       </section>
 
       {/* Welcome section */}
-      <section className="py-20 px-6">
-        <div className="container mx-auto max-w-8xl text-center flex flex-col items-center">
+      <section className='py-20 px-6'>
+        <div className='container mx-auto max-w-8xl text-center flex flex-col items-center'>
           {/* Welcome heading */}
           <div className="mb-6 text-center max-w-xl">
             <h1 className="text-2xl xl:text-3xl font-bold mb-1 2xl:text-4xl">
@@ -85,15 +85,15 @@ const Home = () => {
           {/* Apply Button */}
 
           <Button>
-            <Link to="/admissions">Apply Now</Link>
+            <Link to='/admissions'>Apply Now</Link>
           </Button>
-          <div className="mt-12 relative max-w-8xl">
+          <div className='mt-12 relative max-w-8xl'>
             <img
-              src="/banner-2.png"
-              alt="happy children at school"
-              className="rounded-b-4xl  "
+              src='/banner-2.png'
+              alt='happy children at school'
+              className='rounded-b-4xl  '
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent  to-transparent rounded-b-4xl"></div>
+            <div className='absolute inset-0 bg-gradient-to-t from-black via-transparent  to-transparent rounded-b-4xl'></div>
           </div>
         </div>
       </section>
@@ -110,7 +110,7 @@ const Home = () => {
             <h2 className="font-semibold text-xl mb-6 lg:text-2xl 2xl:text-3xl">
               <span>“</span>Who we are<span>”</span>
             </h2>
-            <p className="text-[min(10vw, 70vw)] text-left mb-6">
+            <p className='text-[min(10vw, 70vw)] text-left mb-6'>
               Who we are at Chamabondo Primary School is rooted in excellence,
               care, and innovation. Located in Victoria Falls, we strive to
               provide a well-rounded education that prepares learners for a
@@ -123,7 +123,7 @@ const Home = () => {
               communities and the world
             </p>
             <Button>
-              <Link to="/about">About us</Link>
+              <Link to='/about'>About us</Link>
             </Button>
           </div>
 
@@ -147,7 +147,7 @@ const Home = () => {
             Why choose us
           </h2>
 
-          <div className="flex max-lg:flex-wrap justify-center">
+          <div className='flex max-lg:flex-wrap justify-center'>
             {cardsData.map(createCards)}
           </div>
         </div>
@@ -206,13 +206,13 @@ const Home = () => {
             </h2>
 
             <form
-              action="submit"
-              className="flex flex-col lg:flex-row gap-4 items-center justify-center"
+              action='submit'
+              className='flex flex-col lg:flex-row gap-4 items-center justify-center'
             >
               <input
-                type="email"
-                placeholder="Email"
-                className="px-4 py-2 rounded-3xl w-72 sm:w-96 focus:outline-none bg-white text-black italic "
+                type='email'
+                placeholder='Email'
+                className='px-4 py-2 rounded-3xl w-72 sm:w-96 focus:outline-none bg-white text-black italic '
               />
 
               <Button>Sign Up</Button>

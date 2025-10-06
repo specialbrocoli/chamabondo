@@ -85,6 +85,9 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Email"
+                  autocomplete="email"
+                  name="email"
+                  id="email"
                   className="w-full px-4 py-2 border border-none bg-white rounded-3xl focus:outline-none focus:ring-1 focus:ring-[#005637]"
                 />
               </div>
