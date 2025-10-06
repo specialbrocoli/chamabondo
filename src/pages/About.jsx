@@ -182,7 +182,7 @@ function About() {
         </div>
       </section>
 
-      {/* Headmster section */}
+      {/* Headmaster section */}
       <section className='mt-12'>
         <h2 className='font-bold text-center m-4 lg:text-3xl 2xl:text-4xl'>
           Message from the Headmaster
