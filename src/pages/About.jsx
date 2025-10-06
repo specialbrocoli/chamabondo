@@ -147,7 +147,7 @@ function About() {
           </h2>
           {/* Section description container */}
           <div className='lg:flex lg:gap-4 lg:mt-12 lg:items-center lg:justify-between'>
-            <p className='text-center text-base first-letter:font-bold first-letter:text-2xl lg:text-left 2xl:text-lg lg:[20px lg:max-w-[65ch]'>
+            <p className='text-center text-base first-letter:font-bold first-letter:text-2xl lg:text-left 2xl:text-lg lg:text-[20px] lg:max-w-[65ch]'>
               We believe in integrity, respect, accountability, and teamwork. We
               foster honesty, empathy, and transparency while encouraging a
               spirit of responsibility and innovation. Our learners are taught
