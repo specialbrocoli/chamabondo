@@ -12,7 +12,7 @@ const Button = ({ children, className = "", ...props }) => {
         cursor-pointer
         text-white font-medium
         transition-all duration-700 ease-in-out rounded-4xl
-        ${isHovered ? "pr-[50px]" : "pr-5"}
+        ${isHovered ? "pr-[50px] -translate-y-2 transition delay-300" : "pr-5"}
         overflow-hidden
         ${className}
       `}
