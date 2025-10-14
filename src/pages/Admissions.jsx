@@ -51,14 +51,12 @@ const admissionCards = (card) => {
   );
 };
 
-
-
 const testimoniesCardsData = [
   {
     id: 1,
     image: "/testimonials-ellipse-1.png",
     title: "Desire Sibanda",
-    subTitle: "Mikkie",
+    subTitle: "Travel blogger",
     description:
       " I am grateful for the supportive teachers  and the friendships I made. Chamabondo shaped the way I think, learn, and lead. The lessons I gained from this school continue to guide me in high school. I feel proud .",
   },
@@ -67,14 +65,15 @@ const testimoniesCardsData = [
     id: 2,
     image: "/testimonials-ellipse-2.png",
     title: "Mikaela Tariro",
-    subTitle: "Mikkie",
-    description: "  I was taught to dream big and work hard. Chamabondo helped me discover my confidence and passion for learning. The values and discipline I gained there gave me a head start in life. ",
+    subTitle: "Travel Blogger",
+    description:
+      "  I was taught to dream big and work hard. Chamabondo helped me discover my confidence and passion for learning. The values and discipline I gained there gave me a head start in life. ",
   },
   {
     id: 3,
     image: "/testimonials-ellipse-3.png",
     title: "Clarence Chikwezeze",
-    subTitle: "Mikkie",
+    subTitle: "Software Developer",
     description:
       "  Our teachers made us feel seen and capable. At Chamabondo, I learned more than just reading and math. I built leadership skills, made lifelong friends, and developed a strong love for school. ",
   },
@@ -84,13 +83,11 @@ const testimonyCards = (testimony) => {
   return (
     <div className="bg-white w-96 h-40 rounded-3xl px-4 py-3 mx-2">
       <div class="flex items-center gap-x-6">
-        <img
-          class="size-16 rounded-full"
-          src={testimony.image}
-          alt=""
-        />
+        <img class="size-16 rounded-full" src={testimony.image} alt="" />
         <div>
-          <h3 class="text-[16px] font-bold tracking-tight">{testimony.title}</h3>
+          <h3 class="text-[16px] font-bold tracking-tight">
+            {testimony.title}
+          </h3>
           <p class="font-bold text-[10px] ">{testimony.subTitle}</p>
           <div className="flex  ">
             <svg
@@ -156,23 +153,18 @@ const testimonyCards = (testimony) => {
         </div>
       </div>
       <div>
-        <p className="text-[10px] text-center pt-2">
-        {testimony.description}
-        </p>
+        <p className="text-[10px] text-center pt-2">{testimony.description}</p>
       </div>
     </div>
   );
 };
 
-
-
 function Admissions() {
   return (
     <main>
       {/*Banner section*/}
-    
-        <Banner></Banner>
-     
+
+      <Banner />
 
       {/*Admissions section*/}
       <section>
@@ -181,7 +173,7 @@ function Admissions() {
             Admissions
           </h2>
           <div className="max-w-xl pb-5">
-            <p  className="text-[min(10vw, 70vw)] mb-6">
+            <p className="text-[min(10vw, 70vw)] mb-6">
               Chamabondo Primary School welcomes applications from learners of
               all backgrounds who are ready to grow in a vibrant, disciplined,
               and nurturing learning environment. We accept children for ECD A
@@ -209,32 +201,32 @@ function Admissions() {
 
         {/*Cards*/}
 
-        <div className="flex flex-wrap justify-center gap-4   ">
+        <div className="flex max-lg:flex-wrap justify-center gap-4 lg:px-8  ">
           {admissionsCardsData.map(admissionCards)}
         </div>
       </section>
 
       {/*Admissions process section*/}
-      <section className="md:h-[100vh] px-4 sm:px-8 lg:px-20">
+      <section className=" h-auto lg:h-[100vh] px-4 sm:px-8 lg:px-20">
         <h2 className="text-2xl md:text-3xl font-bold mt-8 mb-10 text-center ">
           Admission process
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
           {/*Left section*/}
-          <div className="relative">
+          <div className="lg:relative ">
             <div>
               <img
                 src="/admission-process-1.jpg"
                 alt=""
-                className="w-full md:w-[508px] h-auto rounded-4xl"
+                className="w-full lg:w-[508px] h-auto rounded-4xl object-cover py-2"
               />
             </div>
 
-            <div className="md:absolute top-56 left-48 max-lg:static max-lg:mx-auto">
+            <div className="lg:absolute lg:top-56 lg:left-48 ">
               <img
                 src="/admission-process-2.jpg"
                 alt=""
-                className=" w-full md:w-[508px] h-auto rounded-4xl border-3 border-amber-50"
+                className="  w-full lg:w-[508px] h-auto rounded-4xl lg:border-3 border-amber-50"
               />
             </div>
           </div>
@@ -266,6 +258,10 @@ function Admissions() {
                   src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
+                <span class="relative flex size-3">
+                  <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#0BD900] opacity-75"></span>
+                  <span class="relative inline-flex size-3 rounded-full bg-[#0BD900]"></span>
+                </span>
               </div>
             </div>
 
@@ -296,20 +292,20 @@ function Admissions() {
                 </p>
               </div>
 
-              <Button2 >Download application form (pdf)</Button2>
+              <Button2>Download application form (pdf)</Button2>
             </div>
           </div>
         </div>
       </section>
 
       {/*School readiness section*/}
-      <section className=" lg:h-[100vh] px-4 sm:px-8 lg:px-20 ">
+      <section className=" xl:h-[100vh] px-4 sm:px-8 lg:px-20 ">
         <h2 className="text-2xl md:text-3xl font-bold mt-8 mb-10 text-center ">
           School readiness checklist
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 max-lg:grid-cols-1  gap-6  ">
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-6  ">
           {/*Left section*/}
-          <div className=" w-full  h-auto lg:w-[600px] mt-10   ">
+          <div className=" w-full  h-auto mt-10   ">
             <div className="flex flex-col items-center  sm:flex-row md:flex md:justify-center  gap-4 max-lg:px-2">
               <div className="">
                 <img
@@ -319,7 +315,7 @@ function Admissions() {
                 />
               </div>
               <div className="bg-white rounded-3xl w-full h-[280px] max-md:hidden   md:w-[260px] md:h-[200px] flex justify-center items-center shadow-[0_12px_35px_rgba(0,0,0,0.20)] transform transition-all hover:-translate-y-2 duration-300 cursor-pointer ">
-                <img src="/logo.png" alt=""  />
+                <img src="/logo.png" alt="" />
               </div>
             </div>
 
@@ -343,12 +339,12 @@ function Admissions() {
 
           {/*Right section*/}
           <div>
-            <div className="max-lg:text-center md:flex-col md:items-center  ">
+            <div className=" md:flex-col md:items-center  ">
               <p className="text-l md:text-xl font-bold mt-10 mb-2 ">
                 Checklist for new students
               </p>
-              <div >
-                <p className="text-[min(10vw, 70vw)] max-lg:px-30 max-sm:px-4 ">
+              <div>
+                <p className="text-[min(10vw, 70vw)]  max-sm:px-4 ">
                   To help your child start the school year prepared and
                   confident, please ensure they have all the necessary supplies,
                   documents, and uniform items listed in our student checklist.
@@ -398,13 +394,15 @@ function Admissions() {
       </section>
 
       {/*Testimonials section*/}
-      <section >
+      <section>
         <h2 className="text-2xl md:text-3xl font-bold mt-8 mb-10 text-center ">
           Testimonials
         </h2>
-        <div className="bg-[url(/testimonials-bg.png)] bg-center bg-no-repeat bg-cover lg:h-[84vh] w-full flex flex-col items-center content-center ">
+        <div className="motion-opacity-in-0 motion-translate-y-in-700 motion-blur-in-md bg-[url(/testimonials-bg.png)] bg-center bg-no-repeat bg-cover h-auto xl:h-[84vh] w-full flex flex-col items-center content-center ">
           <div className="pt-32 text-white text-center  w-full sm:w-3/4 lg:w-1/2  ">
-            <h4 className="text-xl sm:text-2xl mb-2 ">Graduated Students Testiomonies</h4>
+            <h4 className="text-xl sm:text-2xl mb-2 ">
+              Graduated Students Testiomonies
+            </h4>
             <p className=" text-[min(10vw, 70vw)]  sm:text-base mb-4 pb-3">
               The following are testimonials from some of our proud Chamabondo
               Primary School graduates, sharing their experiences and successes
@@ -413,7 +411,7 @@ function Admissions() {
           </div>
 
           {/*Cards*/}
-          <div className="flex flex-wrap justify-center gap-4  sm:px-8">
+          <div className=" container flex flex-wrap justify-center gap-4  ">
             {testimoniesCardsData.map(testimonyCards)}
           </div>
 
