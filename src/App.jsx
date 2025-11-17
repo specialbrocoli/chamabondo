@@ -1,14 +1,13 @@
-import React from "react";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Gallery from "./pages/Gallery";
-import Contact from "./pages/Contact";
-import Calender from "./pages/Calender";
-import Projects from "./pages/Projects";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import Admissions from "./pages/Admissions";
+import React from 'react';
+import Home from './pages/Home';
+import About from './pages/About';
+import Gallery from './pages/Gallery';
+import Contact from './pages/Contact';
+import Calender from './pages/Calender';
+import Projects from './pages/Projects';
+import Admissions from './pages/Admissions';
 import NotFound from './components/NotFound';
+import Layout from './components/Layout';
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -32,7 +31,7 @@ const router = createBrowserRouter(
 );
 
 const App = () => {
-  return <RouterProvider router={router} />
+  return <RouterProvider router={router} />;
 };
 
 export default App;
