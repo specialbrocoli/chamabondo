@@ -51,6 +51,8 @@ const admissionCards = (card) => {
   );
 };
 
+
+
 const testimoniesCardsData = [
   {
     id: 1,

@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
-import Button from './Button';
-import Logo from '/logo.png';
-import { Link } from 'react-router';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import Button from "./Button";
+import Logo from "/logo.png";
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Gallery', path: '/gallery' },
-    { name: 'Calender', path: '/calender' },
-    { name: 'Projects', path: '/projects' },
-    { name: 'Contact us', path: '/contact' },
-    { name: 'Admissions', path: '/admissions' },
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Gallery", path: "/gallery" },
+    { name: "Calender", path: "/calender" },
+    { name: "Projects", path: "/projects" },
+    { name: "Contact us", path: "/contact" },
+    { name: "Admissions", path: "/admissions" },
   ];
 
   const handleNav = () => {
@@ -37,9 +37,14 @@ const Navbar = () => {
           {navLinks.map((item) => (
             <li
               key={item.name}
-              className='p-4 font-normal cursor-pointer hover:underline underline-offset-8 decoration-2 decoration-[#005637]'
+              className='p-4 font-normal cursor-pointer hover:text-[#005637] transition-colors duration-300'
             >
-              <Link to={item.path}>{item.name}</Link>
+              <NavLink
+                to={item.path}
+                className={({ isActive }) => (isActive ? 'active-link' : null)}
+              >
+                {item.name}
+              </NavLink>
             </li>
           ))}
         </ul>
