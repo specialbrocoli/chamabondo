@@ -84,13 +84,13 @@ const testimoniesCardsData = [
 const testimonyCards = (testimony) => {
   return (
     <div className="bg-white w-96 h-40 rounded-3xl px-4 py-3 mx-2">
-      <div class="flex items-center gap-x-6">
-        <img class="size-16 rounded-full" src={testimony.image} alt="" />
+      <div className="flex items-center gap-x-6">
+        <img className="size-16 rounded-full" src={testimony.image} alt="" />
         <div>
-          <h3 class="text-[16px] font-bold tracking-tight">
+          <h3 className="text-[16px] font-bold tracking-tight">
             {testimony.title}
           </h3>
-          <p class="font-bold text-[10px] ">{testimony.subTitle}</p>
+          <p className="font-bold text-[10px] ">{testimony.subTitle}</p>
           <div className="flex  ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -239,30 +239,30 @@ function Admissions() {
               <p className="text-l md:text-xl font-bold mt-18 mb-2 ">
                 Over 13k+ Enrolled Students
               </p>
-              <div class="flex -space-x-2 overflow-hidden">
+              <div className="flex -space-x-2 overflow-hidden">
                 <img
-                  class="inline-block size-10 rounded-full ring-2 ring-white"
+                  className="inline-block size-10 rounded-full ring-2 ring-white"
                   src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
                 <img
-                  class="inline-block size-10 rounded-full ring-2 ring-white"
+                  className="inline-block size-10 rounded-full ring-2 ring-white"
                   src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
                 <img
-                  class="inline-block size-10 rounded-full ring-2 ring-white"
+                  className="inline-block size-10 rounded-full ring-2 ring-white"
                   src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
                   alt=""
                 />
                 <img
-                  class="inline-block size-10 rounded-full ring-2 ring-white"
+                  className="inline-block size-10 rounded-full ring-2 ring-white"
                   src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
-                <span class="relative flex size-3">
-                  <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#0BD900] opacity-75"></span>
-                  <span class="relative inline-flex size-3 rounded-full bg-[#0BD900]"></span>
+                <span className="relative flex size-3">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#0BD900] opacity-75"></span>
+                  <span className="relative inline-flex size-3 rounded-full bg-[#0BD900]"></span>
                 </span>
               </div>
             </div>
