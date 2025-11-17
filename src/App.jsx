@@ -8,7 +8,6 @@ import Projects from "./pages/Projects";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Admissions from "./pages/Admissions";
-import { Route, Routes } from "react-router-dom";
 import ObserverProvider from "./components/Obeserver-provider";
 import NotFound from './components/NotFound';
 import {
