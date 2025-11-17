@@ -19,12 +19,12 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       <Route index element={<Home />} />
-      <Route path='About' element={<About />} />
-      <Route path='Admissions' element={<Admissions />} />
-      <Route path='Calender' element={<Calender />} />
-      <Route path='Projects' element={<Projects />} />
-      <Route path='Gallery' element={<Gallery />} />
-      <Route path='Contact' element={<Contact />} />
+      <Route path='about' element={<About />} />
+      <Route path='admissions' element={<Admissions />} />
+      <Route path='calender' element={<Calender />} />
+      <Route path='projects' element={<Projects />} />
+      <Route path='gallery' element={<Gallery />} />
+      <Route path='contact' element={<Contact />} />
       <Route path='*' element={<NotFound />} />
     </Route>
   )
