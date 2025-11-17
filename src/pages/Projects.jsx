@@ -6,7 +6,7 @@ import Button2 from "../components/Button2";
 function Projects() {
   return (
     <main>
-      <Banner></Banner>
+      <Banner/>
       {/*Projects section*/}
       <section>
         <div className="mt-12 p-4 sm:p-8 lg:p-20  text-center flex flex-col items-center">
@@ -24,17 +24,17 @@ function Projects() {
           </div>
         </div>
         {/*Cards section*/}
-        <div className="px-20">
-          <div className="grid grid-cols-2 ">
+        <div className="px-4 sm:px-8 lg:px-20 intersect:motion-preset-expand motion-duration-2000 intersect-half">
+          <div className="grid grid-cols-1 sm:grid-cols-2 ">
             <div className="">
               <img
                 src="/projects-1.jpg"
                 alt=""
-                className="w-full lg:h-[50vh] rounded-tl-2xl object-cover"
+                className=" h-full w-full lg:h-[50vh] rounded-tl-2xl object-cover"
               />
             </div>
             <div className="bg-[#06402b] lg:h-[50vh] w-full rounded-tr-2xl flex flex-col justify-center items-center text-white ">
-              <div className="flex">
+              <div className="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="80"
@@ -48,10 +48,10 @@ function Projects() {
                     stroke="#fff"
                   />
                 </svg>
-                <span className="font-bold text-4xl">50+</span>
+                <span className="font-bold text-4xl ">50+</span>
               </div>
-              <h3 className="font-bold text-2xl">Completed</h3>
-              <p className="px-40 text-center">
+              <h3 className="font-bold text-2xl mt-2">Completed</h3>
+              <p className="px-4 sm:px-20 md:px-28 lg:px-40 text-center">
                 completed projects in gardening, recylcing, science models,
                 murals, quizzes, and more. Those efforts inspire creativity,
                 teamwork, and hands-on learning for all.
@@ -59,9 +59,9 @@ function Projects() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 ">
             <div className="bg-[#06402b] lg:h-[50vh] w-full rounded-bl-2xl flex flex-col justify-center items-center text-white ">
-              <div className="flex">
+              <div className="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="80"
@@ -77,8 +77,8 @@ function Projects() {
                 </svg>
                 <span className="font-bold text-4xl">13</span>
               </div>
-              <h3 className="font-bold text-2xl">Ongoing</h3>
-              <p className="px-40 text-center">
+              <h3 className="font-bold text-2xl mt-2">Ongoing</h3>
+              <p className="px-4 sm:px-20 md:px-28 lg:px-40 text-center">
                 completed projects in gardening, recylcing, science models,
                 murals, quizzes, and more. Those efforts inspire creativity,
                 teamwork, and hands-on learning for all.
@@ -88,7 +88,7 @@ function Projects() {
               <img
                 src="/projects-2.jpg"
                 alt=""
-                className="w-full lg:h-[50vh] rounded-br-2xl object-cover"
+                className="w-full h-full lg:h-[50vh] rounded-br-2xl object-cover"
               />
             </div>
           </div>
@@ -109,46 +109,46 @@ function Projects() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 max-lg:grid-cols-1  gap-6  ">
+        <div className="grid grid-cols-1 lg:grid-cols-2  gap-6  ">
           {/*Left section*/}
           <div>
-            <div className="max-lg:text-center md:flex-col md:items-center  ">
-              <p className="text-l md:text-xl font-bold  mb-2 text-center ">
+            <div className=" md:flex-col md:items-center  ">
+              <p className="text-lg md:text-xl font-bold  mb-2 text-center ">
                 Goals
               </p>
             </div>
 
             <div className="pt-18 space-y-10">
-              <div className="flex font-bold">
-                <span className="mr-6">
+              <div className="flex items-start  max-sm:flex-col font-bold">
+                <span className="mr-6 mb-2 sm:mb-0">
                   <img src="/shield-tick-icon.png" alt="" />
                 </span>{" "}
-                <p className="border-b-2 w-[500px] border-gray-200">
+                <p className="border-b-2 w-full sm:w-[500px] border-gray-200">
                   Holistic development
                 </p>
               </div>
 
-              <div className="flex font-bold">
-                <span className="mr-6">
+              <div className="flex  items-start font-bold max-sm:flex-col">
+                <span className="mr-6 mb-2 sm:mb-0">
                   <img src="/shield-tick-icon.png" alt="" />
                 </span>{" "}
-                <p className="border-b-2 w-[500px]  border-gray-200">
+                <p className="border-b-2 w-full sm:w-[500px]  border-gray-200">
                   Academic Excellence
                 </p>
               </div>
-              <div className="flex font-bold">
-                <span className="mr-6">
+              <div className="flex items-start max-sm:flex-col font-bold">
+                <span className="mr-6 mb-2 sm:mb-0">
                   <img src="/shield-tick-icon.png" alt="" />
                 </span>{" "}
-                <p className="border-b-2 w-[500px]  border-gray-200">
+                <p className="border-b-2 w-full sm:w-[500px]  border-gray-200">
                   Community Engagement
                 </p>
               </div>
-              <div className="flex font-bold">
-                <span className="mr-6">
+              <div className="flex items-start max-sm:flex-col font-bold">
+                <span className="mr-6 mb-2 sm:mb-0">
                   <img src="/shield-tick-icon.png" alt="" />
                 </span>{" "}
-                <p className="border-b-2 w-[500px]  border-gray-200">
+                <p className="border-b-2 w-full sm:w-[500px]  border-gray-200">
                   Innovation and Sustainability
                 </p>
               </div>
@@ -156,24 +156,24 @@ function Projects() {
           </div>
 
           {/*Right section*/}
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <div>
               <img
                 src="projects-goals.jpg"
                 alt=""
-                className="w-full h-full rounded-4xl shadow-[0_12px_35px_rgba(0,0,0,0.14)]"
+                className="w-full h-full rounded-4xl shadow-[0_12px_35px_rgba(0,0,0,0.14)]  transform transition-all hover:-translate-y-2 duration-300 cursor-pointer"
               />
             </div>
             <div className="flex flex-col gap-4">
-              <div className=" lg:flex lg:flex-col lg:items-center lg:justify-center text-center bg-white rounded-4xl h-1/2 w-full shadow-[0_12px_35px_rgba(0,0,0,0.14)] transform transition-all hover:-translate-y-2 duration-300 cursor-pointer">
+              <div className=" p-4 flex flex-col items-center justify-center text-center bg-white rounded-4xl sm:h-1/2 h-full w-full shadow-[0_12px_35px_rgba(0,0,0,0.14)] transform transition-all hover:-translate-y-2 duration-300 cursor-pointer">
                 <h3 className="font-bold pb-2 w-40">
                   Dedicated Students in doing their projects
                 </h3>
                 <Button>See how we work</Button>
               </div>
-              <div className=" lg:flex lg:flex-col lg:items-center lg:justify-center text-center bg-[#005637] text-white rounded-4xl h-1/2 w-full shadow-[0_12px_35px_rgba(0,0,0,0.14)] transform transition-all hover:-translate-y-2 duration-300 cursor-pointer">
+              <div className=" p-4 flex flex-col items-center justify-center text-center bg-[#005637] text-white rounded-4xl h-1/2 w-full shadow-[0_12px_35px_rgba(0,0,0,0.14)] transform transition-all hover:-translate-y-2 duration-300 cursor-pointer">
                 <h3>Donate</h3>
-                <p>
+                <p className="text-sm sm:text-base mb-2">
                   Help uplift learners through essential resources, project
                   funding, and continued educational opportunities.
                 </p>
@@ -185,32 +185,32 @@ function Projects() {
       </section>
 
       {/*Projects Gallery section*/}
-      <section className="container px-16 ">
+      <section className="lg:px-16 ">
         <div className="mt-18 p-4 sm:p-8 lg:py-20  text-center flex flex-col items-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-8 mb-6 text-center ">
             Projects Gallery
           </h2>
           
-          <div className="grid grid-cols-4 gap-2 h-auto w-full pb-4 ">
-            <div className="col-span-2 ">
-              <img src="gallery-1.jpg" alt="" className="h-[50vh] w-full rounded-2xl object-cover" />
+          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-2 w-full pb-4 ">
+            <div className="md:col-span-2 ">
+              <img src="gallery-1.jpg" alt="" className="lg:h-[50vh] h-full w-full rounded-2xl object-cover" />
             </div>
             <div>
-              <img src="gallery-2.jpg" alt="" className="h-[50vh] w-full rounded-2xl object-cover" />
+              <img src="gallery-2.jpg" alt="" className="lg:h-[50vh] h-full w-full rounded-2xl object-cover" />
             </div>
             <div>
-              <img src="gallery-3.jpg" alt="" className="h-[50vh] w-full rounded-2xl object-cover" />
+              <img src="gallery-3.jpg" alt="" className="lg:h-[50vh] h-full w-full rounded-2xl object-cover" />
             </div>
           </div>
-          <div className="grid grid-cols-4 gap-2 h-full w-full  ">
+          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-2 h-full w-full  ">
             <div>
-              <img src="gallery-3.jpg" alt="" className="h-[50vh] w-full rounded-2xl object-cover" />
+              <img src="gallery-3.jpg" alt="" className="lg:h-[50vh] h-full w-full rounded-2xl object-cover" />
             </div>
             <div>
-              <img src="gallery-2.jpg" alt="" className="h-[50vh] w-full rounded-2xl object-cover" />
+              <img src="gallery-2.jpg" alt="" className="lg:h-[50vh] h-full w-full rounded-2xl object-cover" />
             </div>
-            <div className="col-span-2">
-              <img src="gallery-1.jpg" alt="" className="h-[50vh] w-full rounded-2xl object-cover" />
+            <div className="md:col-span-2">
+              <img src="gallery-1.jpg" alt="" className="lg:h-[50vh] h-full w-full rounded-2xl object-cover" />
             </div>
           </div>
 

@@ -30,8 +30,8 @@ const Home = () => {
 
       <section className="container mt-12 sm:mx-auto sm:w-xl md:w-3xl lg:-mt-2 xl:w-6xl">
         {/* Hero decription */}
-        <div className="flex flex-col items-center justify-center p-6 md:w-xl md:mx-auto">
-          <h1 className="text-3xl leading-snug font-black text-center mb-4 lg:text-4xl max-[475px]:text-2xl">
+        <div className='flex flex-col items-center justify-center p-6 md:w-xl md:mx-auto'>
+          <h1 className='text-3xl leading-snug font-black text-center mb-4 lg:text-4xl max-[475px]:text-2xl '>
             Putting your child's <br /> future in great motion
           </h1>
           <p className="text-base text-center mb-6 lg:text-lg xl:text-xl max-[475px]:text-sm">
@@ -45,12 +45,12 @@ const Home = () => {
         </div>
 
         {/* Hero img wrapper */}
-        <div className="flex flex-col items-center justify-center md:flex-row">
-          <div className="p-4">
+        <div className='flex flex-col items-center justify-center md:flex-row'>
+          <div className='p-4 '>
             <img
               src={heroImageOne}
-              alt="hero image 1"
-              className="object-cover"
+              alt='hero image 1'
+              className='object-cover '
             />
           </div>
 
@@ -84,10 +84,14 @@ const Home = () => {
 
           {/* Apply Button */}
 
-          <Button>
+          <Button className='hover:-translate-y-2 transition'>
             <Link to='/admissions'>Apply Now</Link>
           </Button>
-          <div className='mt-12 relative max-w-8xl'>
+          <div className='mt-12 relative max-w-8xl   
+            intersect:motion-preset-slide-up
+            intersect:motion-duration-1000
+            intersect:motion-delay-300
+            intersect:motion-ease-spring-smooth intersect-once intersect-half'>
             <img
               src='/banner-2.png'
               alt='happy children at school'
@@ -147,7 +151,7 @@ const Home = () => {
             Why choose us
           </h2>
 
-          <div className='flex max-lg:flex-wrap justify-center'>
+          <div className='flex max-lg:flex-wrap justify-center '>
             {cardsData.map(createCards)}
           </div>
         </div>

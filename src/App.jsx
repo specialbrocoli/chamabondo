@@ -1,12 +1,15 @@
-import React from 'react';
-import Home from './pages/Home';
-import About from './pages/About';
-import Gallery from './pages/Gallery';
-import Contact from './pages/Contact';
-import Calender from './pages/Calender';
-import Projects from './pages/Projects';
-import Layout from './components/Layout';
-import Admissions from './pages/Admissions';
+import React from "react";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
+import Calender from "./pages/Calender";
+import Projects from "./pages/Projects";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import Admissions from "./pages/Admissions";
+import { Route, Routes } from "react-router-dom";
+import ObserverProvider from "./components/Obeserver-provider";
 import NotFound from './components/NotFound';
 import {
   createBrowserRouter,
@@ -31,7 +34,11 @@ const router = createBrowserRouter(
 );
 
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+  <ObserverProvider>
+    <RouterProvider router={router} />
+  </ObserverProvider>
+  );
 };
 
 export default App;
