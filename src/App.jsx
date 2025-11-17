@@ -8,7 +8,6 @@ import Projects from "./pages/Projects";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Admissions from "./pages/Admissions";
-import ObserverProvider from "./components/Obeserver-provider";
 import NotFound from './components/NotFound';
 import {
   createBrowserRouter,
@@ -33,11 +32,7 @@ const router = createBrowserRouter(
 );
 
 const App = () => {
-  return (
-  <ObserverProvider>
-    <RouterProvider router={router} />
-  </ObserverProvider>
-  );
+  return <RouterProvider router={router} />
 };
 
 export default App;
